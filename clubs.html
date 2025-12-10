@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Clubs - PW Institute of Innovation</title>
+    <style>
+        * {
+            font-family:  'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            color: #1f2937;
+            line-height: 1.6;
+            background-color: #f9fafb;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        nav button, nav a button {
+            height: 38px;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 6px;
+            background-color: #f9fafb;
+            color: #1f2937;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid #e5e7eb;
+        }
+
+        nav button:hover, nav a button:hover {
+            background-color: #1e3a8a;
+            color: white;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        main {
+            padding: 3rem 2rem;
+        }
+
+        h1 {
+            color: #1e3a8a;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        h2 {
+            color: #1e3a8a;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .intro-text {
+            color: #6b7280;
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 1rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .clubs-grid {
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr;
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .club {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .club:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transform: translateY(-4px);
+        }
+
+        .club h3 {
+            color: #1e3a8a;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .club p {
+            color: #6b7280;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .club button {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background-color: #10b981;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .club button:hover {
+            background-color: #059669;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+        }
+
+        .club a {
+            text-decoration: none;
+        }
+
+        footer {
+            background: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        footer a {
+            color: #f59e0b;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/pwlogo.webp" alt="PW Institute of Innovation Logo">
+        </div>
+        <nav>
+            <a href="/index.html"><button>Home</button></a>
+            <a href="/events.html"><button>Events</button></a>
+            <a href="/clubs.html"><button>Clubs</button></a>
+            <a href="/registration.html"><button>Register</button></a>
+            <a href="/gallery.html"><button>Gallery</button></a>
+            <a href="/contact.html"><button>Contact</button></a>
+        </nav>
+    </header>
+
+    <main>
+        <h1><i class="bi bi-people"></i> Clubs</h1>
+        <p class="intro-text">Welcome to our clubs page! Explore various clubs at PW Institute of Innovation and join communities that match your interests and passions.</p>
+
+        <h2>Available Clubs</h2>
+        <div class="clubs-grid">
+            <div class="club">
+                <h3><i class="bi bi-camera"></i> Content Creation Club</h3>
+                <p>Explore the art of photography, learn new techniques, composition skills, and participate in photo walks and exhibitions across campus.</p><br>
+                <a href="/join.html"><button>Join Now</button></a>
+            </div>
+
+            <div class="club">
+                <h3><i class="bi bi-robot"></i> Robotics Club</h3>
+                <p>Get hands-on experience with building and programming robots. Compete in robotics competitions and collaborate on innovative projects.</p>
+                <a href="/join.html"><button>Join Now</button></a>
+            </div>
+
+            <div class="club">
+                <h3><i class="bi bi-mask"></i> Cultural Club</h3>
+                <p>Participate in theatrical productions, improve your acting skills, and immerse yourself in the exciting world of drama and performance art.</p><br>
+                <a href="/join.html"><button>Join Now</button></a>
+            </div>
+
+            <div class="club">
+                <h3><i class="bi bi-code-square"></i> Tech Club</h3>
+                <p>Join fellow coders and tech enthusiasts to discuss programming, web development, and the latest technology trends in the industry.</p>
+                <a href="/join.html"><button>Join Now</button></a>
+            </div>
+
+            <div class="club">
+                <h3><i class="bi bi-balloon-heart-fill"></i> Sports Club</h3>
+                <p>Join the sports club to train regularly, improve your athletic skills, and participate in tournaments throughout the year.</p>
+                <a href="/join.html"><button>Join Now</button></a>
+            </div>
+
+            <div class="club">
+                <h3><i class="bi bi-music-note-beamed"></i> Social Welfare Club</h3>
+                <p>Join hands to support communities, lead social campaigns, and make a real impact on society through collective effort.</p>
+                <a href="/join.html"><button>Join Now</button></a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p><strong>&copy; 2025 PW Institute of Innovation</strong></p>
+        <p>All rights reserved.</p>
+    </footer>
+</body>
+</html>

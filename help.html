@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Help - PW Institute of Innovation</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            color: #1f2937;
+            line-height: 1.6;
+            background-color: #f9fafb;
+        }
+        header {
+            position: sticky;
+            top: 0;
+            background: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        nav button, nav a button {
+            height: 38px;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 6px;
+            background-color: #f9fafb;
+            color: #1f2937;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        nav button:hover, nav a button:hover {
+            background-color: #1e3a8a;
+            color: white;
+        }
+        nav a {
+            text-decoration: none;
+        }
+        main {
+            padding: 3rem 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #1e3a8a;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .help-section {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+        }
+        .help-section h2 {
+            color: #1e3a8a;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .help-section p {
+            color: #6b7280;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 5fr 5fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .faq-card {
+            background: #f3f4f6;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+            text-align: left;
+        }
+        .faq-card h3 {
+            color: #1e3a8a;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .faq-card p {
+            color: #374151;
+            font-size: 0.97rem;
+        }
+        .faq-card i {
+            font-size: 1.5rem;
+            color: #3b82f6;
+            margin-right: 0.5rem;
+        }
+        .contact-link {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+        .contact-link:hover {
+            color: #1e3a8a;
+            text-decoration: underline;
+        }
+        footer {
+            background: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            margin: 0.5rem 0;
+            font-size: 0.95rem;
+        }
+        footer a {
+            color: #f59e0b;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/pwlogo.webp" alt="PW Institute of Innovation Logo">
+        </div>
+        <nav>
+            <a href="/index.html"><button>Home</button></a>
+            <a href="/events.html"><button>Events</button></a>
+            <a href="/clubs.html"><button>Clubs</button></a>
+            <a href="/registration.html"><button>Register</button></a>
+            <a href="/gallery.html"><button>Gallery</button></a>
+            <a href="/signin.html"><button>Sign In</button></a>
+        </nav>
+    </header>
+    <main>
+        <h1><i class="bi bi-question-circle"></i> Help & FAQ</h1>
+        <section class="help-section">
+            <h2>How can we help you?</h2>
+            <p>Find answers to common questions about our campus, events, clubs, registration, and more. If you need further assistance, please <a class="contact-link" href="/contact.html">contact us</a>.</p>
+        </section>
+        <div class="faq-grid">
+            <div class="faq-card">
+                <h3><i class="bi bi-calendar-event"></i> How do I register for events?</h3>
+                <p>Visit the <a class="contact-link" href="/registration.html">Registration</a> page, select your event, and fill out the form. You'll receive a confirmation email after successful registration.</p>
+            </div>
+            <div class="faq-card">
+                <h3><i class="bi bi-people"></i> How do I join a club?</h3>
+                <p>Go to the <a class="contact-link" href="/clubs.html">Clubs</a> page, explore available clubs, and click "Join Now" to fill out the membership form.</p>
+            </div>
+            <div class="faq-card">
+                <h3><i class="bi bi-images"></i> Where can I see event photos?</h3>
+                <p>Check out our <a class="contact-link" href="/gallery.html">Gallery</a> for highlights and photos from past events and club activities.</p>
+            </div>
+            <div class="faq-card">
+                <h3><i class="bi bi-info-circle"></i> What is PW Institute of Innovation?</h3>
+                <p>Learn more about our campus, mission, and offerings on the <a class="contact-link" href="/aboutus.html">About Us</a> page.</p>
+            </div>
+            <div class="faq-card">
+                <h3><i class="bi bi-telephone"></i> How can I contact support?</h3>
+                <p>Visit the <a class="contact-link" href="/contact.html">Contact</a> page for email, phone, and a contact form. We're here to help!</p>
+            </div>
+            <div class="faq-card">
+                <h3><i class="bi bi-box-arrow-in-right"></i> How do I sign in?</h3>
+                <p>Go to the <a class="contact-link" href="/signin.html">Sign In</a> page to access your account and personalized features.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p><strong>&copy; 2025 PW Institute of Innovation</strong></p>
+        <p>All rights reserved.</p>
+    </footer>
+</body>
+</html>

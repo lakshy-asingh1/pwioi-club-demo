@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Contact Us - PW Institute of Innovation</title>
+    <style>
+        * {
+            font-family:'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            color: #1f2937;
+            line-height: 1.6;
+            background-color: #f9fafb;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        nav button, nav a button {
+            height: 38px;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 6px;
+            background-color: #f9fafb;
+            color: #1f2937;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        nav button:hover, nav a button:hover {
+            background-color: #1e3a8a;
+            color: white;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        main {
+            padding: 3rem 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #1e3a8a;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .intro-text {
+            color: #6b7280;
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 1rem;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 3fr 3fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .contact-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transform: translateY(-4px);
+        }
+
+        .contact-card i {
+            font-size: 2.5rem;
+            color: #3b82f6;
+            margin-bottom: 1rem;
+        }
+
+        .contact-card h2 {
+            color: #1e3a8a;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-card p {
+            color: #6b7280;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-card a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .contact-card a:hover {
+            color: #1e3a8a;
+            text-decoration: underline;
+        }
+
+        .contact-form {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-form h2 {
+            color: #1e3a8a;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #1f2937;
+            font-size: 0.95rem;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+            font-family: inherit;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 0.75rem 1.5rem;
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #1e3a8a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
+        }
+
+        footer {
+            background: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        footer a {
+            color: #f59e0b;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/pwlogo.webp" alt="PW Institute of Innovation Logo">
+        </div>
+        <nav>
+            <a href="/index.html"><button>Home</button></a>
+            <a href="/events.html"><button>Events</button></a>
+            <a href="/clubs.html"><button>Clubs</button></a>
+            <a href="/registration.html"><button>Register</button></a>
+            <a href="/gallery.html"><button>Gallery</button></a>
+            <a href="/contact.html"><button>Contact</button></a>
+        </nav>
+    </header>
+
+    <main>
+        <h1><i class="bi bi-telephone"></i> Contact Us</h1>
+        <p class="intro-text">We'd love to hear from you! If you have any questions or need further information about our events and clubs, please feel free to reach out to us using any of the methods below.</p>
+
+        <div class="contact-container">
+            <div class="contact-card">
+                <i class="bi bi-envelope-at"></i>
+                <h2>Email</h2>
+                <p>Have questions? Send us an email and we'll respond as soon as possible.</p>
+                <a href="mailto:studentsuccess@pwioi.com">info@pwioi.edu</a>
+            </div>
+
+            <div class="contact-card">
+                <i class="bi bi-telephone"></i>
+                <h2>Phone</h2>
+                <p>Call us during business hours to speak with our team directly.</p>
+                <a href="tel:+14445556666">+1 (444) 555-6666</a>
+            </div>
+
+            <div class="contact-card">
+                <i class="bi bi-geo-alt"></i>
+                <h2>Location</h2>
+                <p>Visit us at our campus location:</p>
+                <p>Platanium Mall<br>Golf City, Lucknow</p>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send us a Message</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name"><i class="bi bi-person"></i> Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email"><i class="bi bi-envelope"></i> Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone"><i class="bi bi-telephone"></i> Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number (optional)">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject"><i class="bi bi-chat-left-text"></i> Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message"><i class="bi bi-pencil-square"></i> Message:</label>
+                    <textarea id="message" name="message" placeholder="Tell us more about your inquiry..." required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p><strong>&copy; 2025 PW Institute of Innovation</strong></p>
+        <p>All rights reserved.</p>
+    </footer>
+</body>
+</html>
