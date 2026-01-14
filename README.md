@@ -9,7 +9,6 @@
 The PW Institute of Innovation website includes the following features:
 
 1. **Landing Page (`index.html`)**
-   - Brief introduction about the institute
    - Navigation to other pages
    - Highlights of upcoming events and featured clubs
 
